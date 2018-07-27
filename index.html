@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SkyWay + Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <div id="control" style="width: 100%;">
+                <button v-on:click="start">start</button>
+                <input v-model="myId" placeholder="" readonly>
+                <input v-model="peerId" placeholder="peerId">
+            </div>
+            <video ref="video" id="video" width="640" height="480" autoplay></video>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+        <script src="https://cdn.webrtc.ecl.ntt.com/screenshare-latest.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
